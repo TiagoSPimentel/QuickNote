@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# QuickNote
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+QuickNote é um aplicativo simples de anotações desenvolvido com React, que permite aos usuários criar, visualizar e excluir notas rapidamente. O objetivo principal é fornecer uma interface intuitiva para gerenciamento de notas.
 
-## Available Scripts
+## Estrutura de Pastas
 
-In the project directory, you can run:
+O projeto segue a seguinte organização de diretórios:
 
-### `npm start`
+```
+QuickNote/
+│-- src/
+│   │-- components/
+│   │   │-- form/       # Componentes de formulário reutilizáveis
+│   │   │-- layout/     # Componentes gerais como botões e mensagens
+│   │   │-- notes/      # Componentes específicos para manipulação de notas
+│   │-- pages/         # Páginas principais do aplicativo
+│   │-- assets/image    # imagens utilizadas
+│-- public/           # Arquivos estáticos
+│-- package.json      # Dependências e scripts do projeto
+│-- README.md         # Documentação do projeto
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tecnologias Utilizadas
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **React.js** - Biblioteca para construção da interface
+- **React Router** - Gerenciamento de rotas
+- **React Icons** - Ícones para os botões de edição e exclusão
+- **CSS Modules** - Estilização modularizada
+- **JSON Server** - Simulação de um backend para armazenamento de notas
 
-### `npm test`
+## Funcionalidades
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Criar novas notas com nome, descrição e conteúdo.
+- Listar todas as notas salvas.
+- Excluir notas da lista.
+- **(Em desenvolvimento)** Função de edição de notas.
 
-### `npm run build`
+## Como Executar o Projeto
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 1. Clonar o repositório
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```sh
+git clone https://github.com/seu-usuario/QuickNote.git
+cd QuickNote
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 2. Instalar dependências
 
-### `npm run eject`
+```sh
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 3. Iniciar o JSON Server
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+O projeto usa o JSON Server como API fake. Para iniciar:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```sh
+npx json-server --watch db.json --port 4000
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 4. Iniciar o projeto React
 
-## Learn More
+Em outro terminal:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```sh
+npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Isso abrirá o aplicativo no navegador em `http://localhost:3000/`.
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
