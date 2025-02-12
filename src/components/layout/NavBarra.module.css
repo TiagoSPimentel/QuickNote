@@ -1,0 +1,39 @@
+.nav_cont{
+    display: flex;
+    justify-content:space-between;
+    background-color:#75927D;
+    padding: 1em;
+  
+}
+
+.list{
+    display: flex;
+    list-style: none;
+    align-items: center;
+   
+}
+.itens{
+    width: 70px;
+    margin-left: 2em;
+    font-size: 1.5em;
+}
+.itens a{
+   
+    color: white;
+    text-decoration: none;
+}
+.itens a:hover {
+    color: #cde3ce;
+    background-color: rgb(55, 70, 52);
+    padding: 5px;
+    border-radius: 5px;
+}
+.tooltip {
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    white-space: nowrap;
+}
+

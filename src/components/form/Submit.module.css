@@ -1,0 +1,13 @@
+.submit_cont{
+    background-color:  #75927D;;
+    color: #fff;
+    padding: 0.7em 1.2em;
+    transition: 0.5s;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
+
+.submit_cont:hover{
+    background-color: rgb(55, 70, 52);
+}

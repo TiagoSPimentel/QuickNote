@@ -1,0 +1,21 @@
+.novaNota_container{
+    padding:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.novanota{
+    width: 450px;
+    margin: 0 auto;
+    padding: 3em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+.novanota h1{
+    margin-bottom: 0.5em;
+    color: #333;
+    display: flex;
+    justify-content: center;
+}
